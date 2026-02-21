@@ -87,34 +87,6 @@ The project follows an **end-to-end data analytics workflow**:
 
 ---
 
-## 🏗️ Repository Architecture
-
-This project follows a modular structure to separate raw ingestion, logic processing, and visual presentation.
-
-
-profit-leakage-analysis/
-│
-├── 📂 data/ ..................... [The Foundation]
-│   ├── raw_superstore_data.csv      # Initial dataset (unprocessed)
-│   └── cleaned_sales_data.csv       # Post-ETL dataset ready for BI
-│
-├── 📂 sql/ ...................... [The Engine Room]
-│   ├── schema.sql                   # Table creation & definitions
-│   └── data_analysis.sql            # Queries for churn & leakage logic
-│
-├── 📂 powerbi/ .................. [The Cockpit]
-│   └── Profit_Leakage_Analysis.pbix # Interactive Dashboard file
-│
-├── 📂 screenshots/ .............. [The Preview]
-│   ├── dashboard_profit_leakage.png # Static view of leakage metrics
-│   └── dashboard_customer_quality.png # Customer segmentation view
-│
-├── .gitignore ................... [System]
-└── README.md .................... [Documentation]
-
-
----
-
 ## 💡 Business Value & Conclusion
 This project demonstrates how combining **Excel-based data preparation,
 SQL-driven analysis, and Power BI visualization**
